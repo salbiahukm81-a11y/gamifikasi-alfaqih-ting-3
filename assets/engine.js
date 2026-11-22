@@ -640,5 +640,5 @@ function showCert(){go('sCert');$('cN').textContent=S.name;$('cR').textContent=r
 function renderLb(){let lb=[];try{lb=JSON.parse(localStorage.getItem(KEY+'_lb')||'[]')}catch(e){}
  $('lbBody').innerHTML=lb.length?lb.map((r,i)=>`<tr><td>${['🥇','🥈','🥉'][i]||i+1}</td><td><b>${esc(r.n)}</b></td><td>Level ${r.l}</td><td>${r.s}</td><td><b>${r.p}</b></td></tr>`).join(''):'<tr><td colspan="5">Belum ada juara. Tamatkan semua misi untuk tersenarai!</td></tr>'}
 window.__G={go,S:()=>S,setS:v=>{S=v},showCert,renderMap,RUN,result};
-const me=document.currentScript&&document.currentScript.src;const shs=document.createElement('script');shs.src=me?me.replace(/engine\.js.*$/,'share.js?v=1795314597'):'../assets/share.js';document.body.appendChild(shs);
+const me=document.currentScript&&document.currentScript.src;const shs=document.createElement('script');shs.src=me?me.replace(/engine\.js.*$/,'share.js?v=1795386267'):'../assets/share.js';document.body.appendChild(shs);
 })();
